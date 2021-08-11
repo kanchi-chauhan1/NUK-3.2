@@ -24,6 +24,7 @@ body{
     line-height: 24px;
     display: flex;
     flex: 1;
+    color:#1D1D1B;
 }
 
 .free-trial-button {
@@ -34,22 +35,33 @@ body{
     line-height: 24px;
     padding: 12px 16px;
     background-color: #FFA300;
-    color:black;
+    color:#1D1D1B;
     border: none;
     margin: 11px 0px;
     text-decoration: none;
 }
-
+.free-trial-button:hover {
+    background-color: #EF9900 !important;
+}
 .free-trial-button:hover{
     text-decoration:none;
-    color:black;
+    color:#1D1D1B;
 }
-
+.three-columns > .title-container > .headline{
+    margin: 0 !important;
+}
 .show-bar{
     transition: 0.5s ease ;
     opacity:1;
 }
+body.NUK-6_6 .feature-column .container{
+    margin: 0px auto;
+    padding: 0px!important;   
+}
 
+h3.headline {
+    margin-top: 0px!important;
+}
 .container>div:nth-of-type(1)+h3 {
     display: none;
 }
@@ -107,13 +119,13 @@ p.gillsans {
         line-height: 16px;
         background-color: #FFA300;
         border: none;
-        color:black;
+        color:#1D1D1B;
         padding: auto auto!important;
         text-decoration: none;
     }
     .free-trial-button:hover{
         text-decoration:none;
-        color:black;
+        color:#1D1D1B;
     }    
 }
 @media (max-width:494px){
