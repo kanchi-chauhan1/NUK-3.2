@@ -1,0 +1,128 @@
+body{
+    padding-bottom: 71px;
+}
+.free-trial-container-desktop > .container {
+    display: flex;
+}
+.free-trial-container-desktop {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    z-index:100000000000;
+    border-top:1px solid #CCCCCC;
+    opacity: 0;
+}
+
+.free-trial-heading {
+    font-family: Times Modern;
+    font-size: 24px;
+    margin: 23px 0px;
+    line-height: 24px;
+    display: flex;
+    flex: 1;
+}
+
+.free-trial-button {
+    font-family: Gill Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 16px;
+    background-color: #FFA300;
+    color:black;
+    border: none;
+    margin: 11px 0px;
+    text-decoration: none;
+}
+
+.free-trial-button:hover{
+    text-decoration:none;
+    color:black;
+}
+
+.show-bar{
+    transition: 0.5s ease ;
+    opacity:1;
+}
+
+.container>div:nth-of-type(1)+h3 {
+    display: none;
+}
+
+p.per-month-thereafter {
+    display: none;
+}
+
+.button-wrapper.less-margin {
+    display: none;
+}
+
+p.gillsans {
+    display: none;
+}
+
+.change-position{
+    transition: 0.5s ease ;
+    transform: translateY(-60px);
+}
+
+@media (max-width:796px){
+    .free-trial-container-desktop > .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:15px;
+        background-color: white;
+        transition: 0.5s ease ;
+        z-index: 1000000;
+    }
+    .change-position{
+        transition: 0.5s ease ;
+        transform: translateY(-107px);
+    }
+    .free-trial-heading {
+        font-family: Times Modern;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        padding-bottom: 12px;
+        margin: 0px;
+    }
+    .free-trial-button {
+        width:100%;
+        margin: 0px 45px!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Gill Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        background-color: #FFA300;
+        border: none;
+        color:black;
+        padding: auto auto!important;
+        text-decoration: none;
+    }
+    .free-trial-button:hover{
+        text-decoration:none;
+        color:black;
+    }    
+}
+@media (max-width:494px){
+    .free-trial-heading {
+        font-family: Times Modern;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        padding-bottom: 12px;
+        margin: 0px;
+    }
+}
