@@ -16,9 +16,9 @@ body{
     border-top:1px solid #CCCCCC;
     opacity: 0;
 }
-
 .free-trial-heading {
     font-family: Times Modern;
+    font-weight: 600;
     font-size: 24px;
     margin: 23px 0px;
     line-height: 24px;
@@ -26,7 +26,6 @@ body{
     flex: 1;
     color:#1D1D1B;
 }
-
 .free-trial-button {
     font-family: Gill Sans;
     font-style: normal;
@@ -58,32 +57,38 @@ body.NUK-6_6 .feature-column .container{
     margin: 0px auto;
     padding: 0px!important;   
 }
-
 h3.headline {
     margin-top: 0px!important;
 }
 .container>div:nth-of-type(1)+h3 {
     display: none;
 }
-
 p.per-month-thereafter {
     display: none;
 }
-
 .button-wrapper.less-margin {
     display: none;
 }
-
 p.gillsans {
     display: none;
 }
-
 .change-position{
     transition: 0.5s ease ;
     transform: translateY(-60px);
 }
-
+@media (max-width:1024px){
+    .free-trial-container-desktop {
+        padding:0px 30px;
+    }  
+    .change-position{
+        transition: 0.5s ease ;
+        transform: translateY(-65px);
+    } 
+}
 @media (max-width:796px){
+    .free-trial-container-desktop {
+        padding:0px 0px;
+    }   
     .free-trial-container-desktop > .container{
         display: flex;
         flex-direction: column;
@@ -128,13 +133,9 @@ p.gillsans {
         color:#1D1D1B;
     }    
 }
-@media (max-width:494px){
-    .free-trial-heading {
-        font-family: Times Modern;
-        font-size: 14px;
-        line-height: 20px;
-        text-align: center;
-        padding-bottom: 12px;
-        margin: 0px;
+@media (max-width:374px){
+    .change-position{
+        transition: 0.5s ease ;
+        transform: translateY(-125px);
     }
 }
